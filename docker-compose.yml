@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  mysite:
+    build: .
+    container_name: xiaobing
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - .:/usr/src/app
+    command:
+      - /bin/sh
+      - -c
+      - |
+        uwsgi --ini uwsgi/uwsgi.ini
+        tail -f /dev/null
+

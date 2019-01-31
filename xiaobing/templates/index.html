@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ch">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="小冰QQ飞车截图机器人">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title> 小冰智能机器人 </title>
+    {% load staticfiles %}
+    <link href="{% static "bootstrap-jq/css/bootstrap.min.css" %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static "bootstrap-jq/css/common.css" %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static "bootstrap-jq/css/flat-ui.min.css" %}"/>
+    <link rel="stylesheet" href="{% static "bootstrap-jq/css/bootstrap.min.css" %}"/>
+    <link rel="stylesheet" href="{% static "bootstrap-jq/css/ace.min.css" %}"/>
+    <link rel="stylesheet" href="{% static "bootstrap-jq/css/fonts.googleapis.com.css" %}"/>
+    <link rel="stylesheet" href="{% static "user-defind/user-defined.css" %}"/>
+
+        {#  图片放大css  #}
+    <link type="text/css" rel="stylesheet" href="{% static "5c5047cb279d2/css/app.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "5c5047cb279d2/css/swiper.min.css" %}"/>
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default ace-save-state">
+    <div class="navbar-container ace-save-state" id="navbar-container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand center">
+                <small>
+                    小冰智能机器人
+                </small>
+            </a>
+        </div>
+    </div>
+</div>
+
+<ul class="nav nav-pills" id="tab_header">
+
+</ul>
+
+<div class="leftMeun" id="leftMeun" style="overflow-y: scroll;">
+
+</div>
+
+<div class="rightContent" style="overflow-y: scroll;">
+    <div class="container-fluid">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="list-group">
+
+                    <div id="content2" class="list-group-item">
+
+                    </div>
+                    <hr>
+                    <div id="content1" class="list-group-item">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="big_img">
+    <div class="swiper-container2">
+        <div class="swiper-wrapper">
+
+        </div>
+    </div>
+    <div class="swiper-pagination2"></div>
+</div>
+</body>
+
+<script src="{% static "jquery-1.9.1.min.js" %}"></script>
+<!--[if lt IE 9]>
+<script src="{% static "bootstrap-jq/js/respond.min.js" %}" ></script>
+<![endif]-->
+<script type="text/javascript" src="{% static "user-defind/user-defined.js" %}"></script>
+
+<script type="text/javascript" src="{% static "5c5047cb279d2/js/jquery.min.js" %}"></script>
+<script type="text/javascript" src="{% static "5c5047cb279d2/js/rem.js" %}"></script>
+<script type="text/javascript" src="{% static "5c5047cb279d2/js/swiper.min.js" %}"></script>
+
+<script type="text/javascript">
+
+    $(function () {
+        $(".meun-item").click(function () {
+            $(".meun-item").removeClass("meun-item-active");
+            $(this).addClass("meun-item-active");
+        });
+        $("#leftMeun").toggleClass("show");
+
+        xiaobing.initTopTab();
+        $("#content2").height(100);
+        $("#content1").height(($("#leftMeun").height() - $("#content2").height()) * 0.80);
+    })
+
+    /*调起大图 S*/
+    var mySwiper = new Swiper('.swiper-container2', {
+        loop: false,
+        pagination: '.swiper-pagination2',
+    })
+    $("#content1,#content2").on('click', "img", function () {
+        var imgBox = $(this).parents(".list-group").find("img");
+        var i = $(imgBox).index(this);
+        $(".big_img .swiper-wrapper").empty("")
+
+        for (var j = 0, c = imgBox.length; j < c; j++) {
+            $(".big_img .swiper-wrapper").append('<div class="swiper-slide"><div class="cell"><img src="' + imgBox.eq(j).attr("src") + '" / ></div></div>');
+        }
+        mySwiper.updateSlidesSize();
+        mySwiper.updatePagination();
+        $(".big_img").css({
+            "z-index": 1001,
+            "opacity": "1"
+        });
+        mySwiper.slideTo(i, 0, false);
+        return false;
+    });
+
+    $(".big_img").on("click",
+        function () {
+            $(this).css({
+                "z-index": "-1",
+                "opacity": "0"
+            });
+        }).on('click', "video", function () {
+        var imgBox = $(this).parents(".list-group").find("video");
+        var i = $(imgBox).index(this);
+        $(".big_img .swiper-wrapper").empty("")
+
+        for (var j = 0, c = imgBox.length; j < c; j++) {
+            $(".big_img .swiper-wrapper").append('<div class="swiper-slide"><div class="cell">' + imgBox.eq(j) + '</div></div>');
+        }
+        mySwiper.updateSlidesSize();
+        mySwiper.updatePagination();
+        $(".big_img").css({
+            "z-index": 1001,
+            "opacity": "1"
+        });
+        mySwiper.slideTo(i, 0, false);
+        return false;
+    });
+
+    $(".big_img").on("click",
+        function () {
+            $(this).css({
+                "z-index": "-1",
+                "opacity": "0"
+            });
+        })
+</script>
+</html>
