@@ -10,14 +10,14 @@
                 {{ field.label|safe }}{% if field.field.required %}<span class="asteriskField">*</span>{% endif %}
             </label>
         {% endif %}
-
+{% load inner_html %}
         <div class="controls {{ field_class }}">
             <div class="input-group {{classes}}">
             {% for input in inputs %}
               {% if input == '@@' %}
                 {% crispy_field field %}
               {% else %}
-                 <span class="input-group-addon">{{input|safe}}</span>
+                 <span class="input-group-addon">{{input|safe|mark_safe_ext}}</span>
               {% endif %}
             {% endfor %}
             </div>

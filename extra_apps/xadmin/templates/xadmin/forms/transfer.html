@@ -19,10 +19,11 @@
             <a class="btn btn-default btn-sm selector-remove" title="{% trans "Remove" %}"><i class="fa fa-minus"></i></a>
         </li>
     </ul>
+    {% load inner_html %}
     <div class="selector-chosen">
         <p class="title">{% trans "Chosen" %} {{verbose_name}}</p>
         <select multiple="multiple" {{flatatts|safe}}>
-            {{chosen_options|safe}}
+            {{chosen_options|safe|mark_safe_ext}}
         </select>
         <a class="btn btn-default selector-clearall" title="{% trans "Click to remove all chosen at once." %}">{% trans "Remove all" %}</a>
     </div>

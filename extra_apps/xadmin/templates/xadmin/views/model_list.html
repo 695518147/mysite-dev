@@ -78,6 +78,8 @@
   <div class="results table-responsive">
   {% if results %}
   {% block results_grid %}
+      {% load inner_html %}
+    {#      渲染的列表 #}
   <table class="table table-bordered table-striped table-hover">
     {% block results_grid_head %}
     <thead>
@@ -86,7 +88,7 @@
           {% if o.btns %}
             <div class="pull-right">
               {% for b in o.btns %}
-                {{b|safe}}
+                {{b|safe|mark_safe_ext}}
               {% endfor %}
             </div>
           {% endif %}
@@ -97,7 +99,7 @@
               </a>
               <ul class="dropdown-menu" role="menu">
                 {% for m in o.menus %}
-                  {{m|safe}}
+                  {{m|safe|mark_safe_ext}}
                 {% endfor %}
               </ul>
             </div>
@@ -117,23 +119,27 @@
           {% if o.btns %}
             <div class="btn-group pull-right">
               {% for b in o.btns %}
-                {{b|safe}}
+                {{b|safe }}
               {% endfor %}
             </div>
           {% endif %}
           {% if o.menus %}
             <div class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                {{ o.label }}
+                {% autoescape off %}
+              {{ o.label| mark_safe_ext }}
+              {% endautoescape %}
               </a>
               <ul class="dropdown-menu">
                 {% for m in o.menus %}
-                  {{m|safe}}
+                  {{m|safe | mark_safe_ext}}
                 {% endfor %}
               </ul>
             </div>
           {% else %}
-            {{ o.label }}
+            {% autoescape off %}
+              {{ o.label| mark_safe_ext }}
+              {% endautoescape %}
           {% endif %}
         </td>
       {% endfor %}</tr>

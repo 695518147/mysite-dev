@@ -18,3 +18,10 @@ def nowrap(val):
     if isinstance(val, str):
         val = mark_safe(val.replace("\"<p>", "").replace("</p>\"", "").replace(' ', ''))
     return val
+
+
+@register.filter
+def mark_safe_ext(val):
+    if isinstance(val, str):
+        val = mark_safe(val.replace("&lt;", "<").replace("&gt;", ">"))
+    return val

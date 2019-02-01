@@ -6,14 +6,8 @@ from .models import Order, OrderType
 
 
 class OrderAdmin(object):
-    list_display = ['orderName_html', 'orderType', 'isShow', 'isSplit', 'number',
+    list_display = ['orderName', 'orderType', 'isShow', 'isSplit', 'number',
                     'createTime']
-
-    # 强制显示HTML而不是HTML代码
-    def orderName_html(self, obj):
-        return format_html(obj.orderName)
-
-    orderName_html.short_description = '指令名称'
 
     # 注意这里是content字段是你要换成ueditor的字段
     style_fields = {
@@ -51,13 +45,8 @@ class OrderAdmin(object):
 
 class OrderTypeAdmin(object):
     # 在admin总要显示的列
-    list_display = ('orderTypeName_html', 'number', 'createTime')
+    list_display = ('orderTypeName', 'number', 'createTime')
 
-    # 强制显示HTML而不是HTML代码
-    def orderTypeName_html(self, obj):
-        return format_html(obj.orderTypeName)
-
-    orderTypeName_html.short_description = '指令类型名称'
     # list_editable 设置默认可编辑字段
     list_editable = ['number']
     ordering = ('number',)
