@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b3f54b7e-56eb-42b1-8088-478b7c6ba92c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/base_site_ext.html" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/base_site_ext.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/templatetags/inner_html.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/templatetags/inner_html.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/base_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/base_site.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +52,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
+            <state>
+              <caret column="11" selection-start-column="11" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/base_site.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="895">
+              <caret line="97" column="52" selection-start-line="97" selection-start-column="52" selection-end-line="97" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/views/detail.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="260" selection-start-line="260" selection-end-line="260" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,25 +114,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templatetags/inner_html.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="18" column="87" selection-start-line="18" selection-start-column="87" selection-end-line="18" selection-end-column="87" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/widgets/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="80" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
-              <folding>
-                <element signature="e#1038#1045#1#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,11 +138,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;i class=&quot;{{model_icon}}&quot;&gt;</find>
-      <find>get_orderTypeName</find>
-      <find>navbar content-navbar navbar-default navbar-xs</find>
-      <find>&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt;</find>
-      <find>.fa.fa-info-circle</find>
       <find>merge</find>
       <find>xadmin.plugin.portal</find>
       <find>Media</find>
@@ -150,15 +153,20 @@
       <find>xadmin.page.form.js</find>
       <find>xadmin/includes/toggle_back.html</find>
       <find>fa fa-pencil</find>
-      <find>base_template</find>
       <find>nav_title</find>
       <find>breadcrumb</find>
-      <find>×&lt;/button&gt;</find>
       <find>alert-success</find>
       <find>&amp;times;&lt;/button&gt;</find>
       <find>content-block</find>
       <find>x&lt;/button&gt;</find>
       <find>content</find>
+      <find>×&lt;/button&gt;</find>
+      <find>navbar-btn pull-right hide-xs</find>
+      <find>button&gt;</find>
+      <find>base_template</find>
+      <find>alert alert-dismissable</find>
+      <find>&lt;/button&gt;</find>
+      <find>id=&quot;detail-modal-id&quot;</find>
       <find>content-nav</find>
     </findStrings>
     <replaceStrings>
@@ -237,14 +245,14 @@
         <option value="$PROJECT_DIR$/extra_apps/xadmin/views/detail.py" />
         <option value="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/batch_change_form.html" />
         <option value="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/dashboard.html" />
-        <option value="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_list.html" />
-        <option value="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/base_site.html" />
         <option value="$PROJECT_DIR$/extra_apps/xadmin/views/base.py" />
         <option value="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_detail.html" />
-        <option value="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/widgets/addform.html" />
         <option value="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_form.html" />
         <option value="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/base_site_ext.html" />
         <option value="$PROJECT_DIR$/extra_apps/xadmin/templatetags/inner_html.py" />
+        <option value="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/widgets/addform.html" />
+        <option value="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_list.html" />
+        <option value="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/base_site.html" />
       </list>
     </option>
   </component>
@@ -480,7 +488,7 @@
       <workItem from="1548839786288" duration="12008000" />
       <workItem from="1548857398281" duration="14214000" />
       <workItem from="1548965314268" duration="861000" />
-      <workItem from="1549014145608" duration="25325000" />
+      <workItem from="1549014145608" duration="26144000" />
     </task>
     <task id="LOCAL-00001" summary="ueditor">
       <created>1548684968853</created>
@@ -671,11 +679,18 @@
       <option name="project" value="LOCAL" />
       <updated>1549050462848</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="保存继续编辑  成功后的UI优化">
+      <created>1549051158543</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1549051158544</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167765000" />
+    <option name="totallyTimeSpent" value="168584000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -688,7 +703,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1438" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28223497" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -757,7 +771,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="xadmin" />
     <MESSAGE value="扩展APP目录extra_apps的新增" />
     <MESSAGE value="mixins,ViewSet和routers配合使用" />
     <MESSAGE value="过滤添加" />
@@ -782,17 +795,11 @@
     <MESSAGE value="css" />
     <MESSAGE value="xadmin适配" />
     <MESSAGE value="xadmin UI优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="xadmin UI优化" />
+    <MESSAGE value="保存继续编辑  成功后的UI优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="保存继续编辑  成功后的UI优化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/extra_apps/xadmin/views/detail.py</url>
-          <line>260</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -803,15 +810,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/extra_apps/django_ueditor/templates/ueditor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#script#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/utils/translation/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
@@ -1097,27 +1095,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/views/detail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="260" column="55" selection-start-line="260" selection-start-column="55" selection-end-line="260" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/base_site.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="74" column="46" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="46" />
-          <folding>
-            <element signature="e#3518#3525#1#HTML" expanded="true" />
-            <element signature="e#3832#3838#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/widgets/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -1138,23 +1115,6 @@
     <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/quick_detail.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="15" column="91" selection-start-line="15" selection-start-column="91" selection-end-line="15" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/widgets/addform.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="80" lean-forward="true" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
-          <folding>
-            <element signature="e#507#529#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1163,13 +1123,6 @@
             <element signature="e#498#505#1#HTML" expanded="true" />
             <element signature="n#block#2;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1207,6 +1160,58 @@
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/widgets/addform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="80" lean-forward="true" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
+          <folding>
+            <element signature="e#507#529#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/views/detail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="260" selection-start-line="260" selection-end-line="260" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/www/xadmin/js/xadmin.plugin.details.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#227#234#1" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="15" column="91" selection-start-line="15" selection-start-column="91" selection-end-line="15" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/base_site.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="895">
+          <caret line="97" column="52" selection-start-line="97" selection-start-column="52" selection-end-line="97" selection-end-column="52" />
         </state>
       </provider>
     </entry>
