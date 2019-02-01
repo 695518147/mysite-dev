@@ -1,0 +1,1 @@
+### 1.   orderType = models.ForeignKey(OrderType, on_delete=models.CASCADE, verbose_name='指令类型', ),verbose_name用于设置外键的显示。

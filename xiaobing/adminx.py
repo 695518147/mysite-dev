@@ -1,19 +1,13 @@
-from django.contrib import admin
 from django.utils.html import format_html
 
 import xadmin
+from xiaobing.action.action import MyAction
 from .models import Order, OrderType
 
 
 class OrderAdmin(object):
-    list_display = ['orderName_html', 'get_orderTypeName', 'isShow', 'isSplit', 'number',
+    list_display = ['orderName_html', 'orderType', 'isShow', 'isSplit', 'number',
                     'createTime']
-
-    # 此obj为admin.site.register注册的对象
-    def get_orderTypeName(self, obj):
-        return obj.orderType
-
-    get_orderTypeName.short_description = '指令类型名称'
 
     # 强制显示HTML而不是HTML代码
     def orderName_html(self, obj):
@@ -52,10 +46,7 @@ class OrderAdmin(object):
     search_fields = ('orderName',)  # 搜索字段
     date_hierarchy = 'createTime'  # 详细时间分层筛选　
 
-
-class OrderInline(admin.StackedInline):
-    model = Order
-    extra = 0
+    model_icon = 'glyphicon glyphicon-wrench'
 
 
 class OrderTypeAdmin(object):
@@ -74,8 +65,8 @@ class OrderTypeAdmin(object):
     style_fields = {
         'orderTypeName': 'ueditor'
     }
-    # 级联增加
-    # inlines = [OrderInline]
+
+    model_icon = 'glyphicon glyphicon-wrench'
 
 
 xadmin.site.register(Order, OrderAdmin)

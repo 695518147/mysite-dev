@@ -18,14 +18,18 @@ from django.urls import path, include, re_path
 from django.views.static import serve
 from mysite import settings
 import xadmin
+from xadmin.plugins import xversion
 from xiaobing import views
+
+xadmin.autodiscover()
+xversion.register_models()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('xadmin/', xadmin.site.urls),
     path('ueditor/', include('django_ueditor.urls')),
     path('xb/', include('xiaobing.urls')),
-    path('', views.index),
+    path('', views.index, name="index"),
 ]
 
 urlpatterns += [

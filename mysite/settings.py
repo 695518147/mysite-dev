@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'a10jo5wu8d)^0f9voc11%(420s8^l)x*y%-lpqhy4adbzea#gk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ["192.168.0.100", "127.0.0.1"]
@@ -64,7 +64,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'mysite.urls'
-
 ROOT_HOSTCONF = 'mysite.hosts'  # 添加ROOT_HOSTCONF参数
 DEFAULT_HOST = 'www'  # 添加默认的host
 
@@ -89,13 +88,24 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'mysite',
+#         'USER': 'root',
+#         'PASSWORD': 'z?guwrBhH7p>',
+#         'HOST': '120.78.205.51',
+#         'PORT': '3306'
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mysite',
         'USER': 'root',
-        'PASSWORD': 'z?guwrBhH7p>',
-        'HOST': '120.78.205.51',
+        'PASSWORD': 'rootroot',
+        'HOST': '192.168.0.100',
         'PORT': '3306'
     }
 }

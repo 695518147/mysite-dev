@@ -5,6 +5,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from django_filters.rest_framework import DjangoFilterBackend
+from django_hosts import reverse
 from rest_framework import mixins
 from rest_framework.authentication import SessionAuthentication
 from rest_framework.pagination import PageNumberPagination
@@ -29,6 +30,8 @@ def access(fun):
 # @cache_page(60 * 15)  # 秒数，这里指缓存 15 分钟，
 @access
 def index(request):
+    homepage_url = reverse('index', host='xb')
+    print(homepage_url)
     return render(request, "index.html")
 
 
