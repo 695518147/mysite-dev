@@ -16,5 +16,5 @@ def inner_html(val):
 @register.filter
 def nowrap(val):
     if isinstance(val, str):
-        val = mark_safe(val.replace("\"<p>", "").replace("</p>\"", "").strip())
+        val = mark_safe(val.replace("\"<p>", "").replace("</p>\"", "").replace(' ', ''))
     return val
