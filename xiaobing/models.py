@@ -26,7 +26,7 @@ class OrderType(models.Model):
 class Order(models.Model):
     orderName = ModelUEditorField(u"指令名称", blank=True, toolbars='mini', width=900, height=50, imagePath="images/",
                                   filePath="files/")
-    orderType = models.ForeignKey(OrderType, on_delete=models.CASCADE, verbose_name='指令类型', )
+    orderType = models.ForeignKey(OrderType, on_delete=models.CASCADE, verbose_name='指令类型', related_name="orderType")
     isShow = models.BooleanField(u"是否显示该条指令", default=True)
     isSplit = models.BooleanField(u"是否分栏", default=True)
     orderDescription = ModelUEditorField(u"指令说明", blank=True, toolbars='normal', width=900, height=200,

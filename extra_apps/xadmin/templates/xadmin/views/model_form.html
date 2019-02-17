@@ -8,6 +8,7 @@
 {% load inner_html %}
 
 {% block content %}
+    {%  autoescape off %}
     <form class="exform" {% if has_file_field %}enctype="multipart/form-data" {% endif %}action="{{ form_url }}"
           method="post" id="{{ opts.model_name }}_form">{% csrf_token %}
         {% block form_top %}{% endblock %}
@@ -29,4 +30,5 @@
 
         {% block submit_buttons_bottom %}{% include "xadmin/includes/submit_line.html" %}{% endblock %}
     </form>
+    {% endautoescape %}
 {% endblock %}

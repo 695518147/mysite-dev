@@ -412,6 +412,9 @@ class CreateAdminView(ModelFormAdminView):
     @filter_hook
     def get_response(self):
         context = self.get_context()
+        orderForm = context['form']
+        orderType = orderForm['orderType']
+        print(orderForm['orderType'])
         context.update(self.kwargs or {})
 
         return TemplateResponse(

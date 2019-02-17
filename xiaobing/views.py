@@ -4,6 +4,7 @@ from threading import Thread
 from django.shortcuts import render
 
 # Create your views here.
+from django.views.decorators.cache import cache_page
 from django_filters.rest_framework import DjangoFilterBackend
 from django_hosts import reverse
 from rest_framework import mixins
@@ -27,11 +28,9 @@ def access(fun):
     return wrapper
 
 
-# @cache_page(60 * 15)  # 秒数，这里指缓存 15 分钟，
+@cache_page(60 * 15)  # 秒数，这里指缓存 15 分钟，
 @access
 def index(request):
-    homepage_url = reverse('index', host='xb')
-    print(homepage_url)
     return render(request, "index.html")
 
 
@@ -78,7 +77,7 @@ class OrderViewSet(
     mixins.CreateModelMixin,  # --> 用于post去创建数据
     GenericViewSet   # --->用于去get所有的queryset信息,可以进行过滤,
 ):
-    queryset = Order.objects.filter(isShow=1)
+    queryset = Order.objects.filter(isShow=1).prefetch_related()
     serializer_class = OrderSerializers
     authentication_classes = [SessionAuthentication]
     permission_classes = [IsAuthenticatedOrReadOnly]
