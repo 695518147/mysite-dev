@@ -7,6 +7,7 @@ ADD . .
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r  plist.txt
 
+RUN  python manage.py makemigrations
 RUN  python manage.py migrate
 
 EXPOSE 80:80
