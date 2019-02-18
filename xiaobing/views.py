@@ -1,46 +1,30 @@
 import os
-from threading import Thread
 
 from django.shortcuts import render
 
 # Create your views here.
 from django.views.decorators.cache import cache_page
 from django_filters.rest_framework import DjangoFilterBackend
-from django_hosts import reverse
 from rest_framework import mixins
 from rest_framework.authentication import SessionAuthentication
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
-from xiaobing.getIPInfo import ip_address
+
 from xiaobing.models import Order, OrderType, IpInfo
 from xiaobing.serializers import OrderSerializers, OrderTypeSerializers, IpInfoSerializers
 from pyecharts import Bar
 
 
-def access(fun):
-    def wrapper(request):
-        t = Thread(target=ip_address())
-        t.start()
-        return fun(request)
-
-    return wrapper
-
-
-@cache_page(60 * 15)  # 秒数，这里指缓存 15 分钟，
-@access
+@cache_page(60 * 60)  # 秒数，这里指缓存 60 分钟，
 def index(request):
     return render(request, "index.html")
 
 
 def statistics(request):
     rootPath = os.path.abspath(os.path.dirname(__file__))
-
-    print(rootPath)
-    dataPath = os.path.abspath(rootPath + '/static/statistics.html')
-    print(dataPath)
-
+    os.path.abspath(rootPath + '/static/statistics.html')
     infos = IpInfo.objects.all()
     citys = {}
     attr = []  # 这样X坐标
@@ -75,7 +59,7 @@ class OrderViewSet(
     mixins.UpdateModelMixin,  # -->用于patch, put更新
     mixins.DestroyModelMixin,  # --> 用于delete去删除数据
     mixins.CreateModelMixin,  # --> 用于post去创建数据
-    GenericViewSet   # --->用于去get所有的queryset信息,可以进行过滤,
+    GenericViewSet  # --->用于去get所有的queryset信息,可以进行过滤,
 ):
     queryset = Order.objects.filter(isShow=1).prefetch_related()
     serializer_class = OrderSerializers

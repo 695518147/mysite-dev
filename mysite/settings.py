@@ -60,6 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'xiaobing.SimpleMiddleware.SimpleMiddleware',
     'django_hosts.middleware.HostsRequestMiddleware',  # 在中间件列表结尾加入django_hosts的中间件
 
 ]
@@ -187,3 +188,5 @@ LOGGING = {
         },
     }
 }
+
+gather_information = ["/"]
