@@ -22,6 +22,7 @@ def ip_address():
                       latitude=response.location.latitude)
         info.save()
     except Exception as e:
+        print("采集访问记录异常")
         print(e)
 
 

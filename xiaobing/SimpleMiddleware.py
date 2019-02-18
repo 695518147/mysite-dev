@@ -12,5 +12,8 @@ except ImportError:
 class SimpleMiddleware(MiddlewareMixin):
 
     def process_request(self, request):
+        print("===========================")
+        print(request.path)
         if request.path in gather_information:
-            Thread(target=ip_address).start()
+            print("-------------")
+            Thread(target=ip_address()).start()

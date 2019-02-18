@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'a10jo5wu8d)^0f9voc11%(420s8^l)x*y%-lpqhy4adbzea#gk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ["192.168.0.100", "127.0.0.1"]
@@ -53,6 +53,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django_hosts.middleware.HostsRequestMiddleware',  # 在中间件列表开头加入django_hosts的中间件
+    'xiaobing.SimpleMiddleware.SimpleMiddleware',
+    'django.middleware.cache.CacheMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -60,9 +62,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'xiaobing.SimpleMiddleware.SimpleMiddleware',
     'django_hosts.middleware.HostsRequestMiddleware',  # 在中间件列表结尾加入django_hosts的中间件
-
 ]
 
 ROOT_URLCONF = 'mysite.urls'

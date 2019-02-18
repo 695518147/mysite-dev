@@ -1,9 +1,9 @@
-import os
+import json
 
 from django.shortcuts import render
 
 # Create your views here.
-from django.views.decorators.cache import cache_page
+from django.views.decorators.cache import cache_page, never_cache
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import mixins
 from rest_framework.authentication import SessionAuthentication
@@ -14,7 +14,6 @@ from rest_framework.viewsets import GenericViewSet
 
 from xiaobing.models import Order, OrderType, IpInfo
 from xiaobing.serializers import OrderSerializers, OrderTypeSerializers, IpInfoSerializers
-from pyecharts import Bar
 
 
 @cache_page(60 * 60)  # 秒数，这里指缓存 60 分钟，
@@ -22,9 +21,8 @@ def index(request):
     return render(request, "index.html")
 
 
+@never_cache
 def statistics(request):
-    rootPath = os.path.abspath(os.path.dirname(__file__))
-    os.path.abspath(rootPath + '/static/statistics.html')
     infos = IpInfo.objects.all()
     citys = {}
     attr = []  # 这样X坐标
@@ -38,10 +36,7 @@ def statistics(request):
         attr.append(k)
         v1.append(v)
 
-    bar = Bar("网站访问统计", "本图表展示过去所有访问记录")  # 这里是主标题和副标题
-    bar.add("数量", attr, v1, mark_line=["average"], mark_point=["max", "min"])  # 每一个值的名称以及要展现平均值和最大最小值
-    bar.render(rootPath + '/templates/statistics.html')  # 在/tmp文件夹里生成一个111.html文件
-    return render(request, "statistics.html")
+    return render(request, "tj.html", {"key": json.dumps(attr), "val": json.dumps(v1)})
 
 
 class Pagination(PageNumberPagination):
