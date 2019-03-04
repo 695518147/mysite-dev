@@ -7,12 +7,39 @@ services:
     restart: always
     ports:
       - 80:80
+    depends_on:
+      - mysql
+    networks:
+      - mysite_net
     volumes:
       - .:/usr/src/app
     command:
       - /bin/sh
       - -c
       - |
+        python manage.py makemigrations
+        python manage.py migrate
         uwsgi --ini uwsgi/uwsgi.ini
         tail -f /dev/null
 
+  mysql:
+    image: mysql
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql/my.cnf:/etc/my.cnf
+      - ./mysql/init:/docker-entrypoint-initdb.d/
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootroot
+    networks:
+      mysite_net:
+        ipv4_address: 10.11.10.1
+    container_name: "mysql"
+
+networks:
+  mysite_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.11.0.0/16

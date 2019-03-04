@@ -90,27 +90,27 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mysite',
-        'USER': 'root',
-        'PASSWORD': 'z?guwrBhH7p>',
-        'HOST': '120.78.205.51',
-        'PORT': '3306'
-    }
-}
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'mysite',
 #         'USER': 'root',
-#         'PASSWORD': 'rootroot',
-#         'HOST': '127.0.0.1',
+#         'PASSWORD': 'z?guwrBhH7p>',
+#         'HOST': '120.78.205.51',
 #         'PORT': '3306'
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mysite',
+        'USER': 'root',
+        'PASSWORD': 'rootroot',
+        'HOST': '10.11.10.1',
+        'PORT': '3306'
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
