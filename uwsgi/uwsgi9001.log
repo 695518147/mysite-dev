@@ -421,3 +421,438 @@ xb.toolob.cn [pid: 14|app: 0|req: 13/24] 10.11.0.1 () {40 vars in 655 bytes} [Mo
 ===========================
 /xb/order
 xb.toolob.cn [pid: 14|app: 0|req: 14/25] 10.11.0.1 () {40 vars in 655 bytes} [Mon Mar  4 22:54:02 2019] GET /xb/order?orderType=2 => generated 7397 bytes in 35 msecs (HTTP/1.1 200) 7 headers in 225 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Mar  4 16:13:33 2019] ***
+compiled with version: 6.3.0 20170516 on 04 March 2019 16:12:35
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: 2db195fa11fb
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /usr/src/app
+writing pidfile to uwsgi/run/uwsgi9001.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to .
+limiting address space of processes...
+your process address space limit is 536870912 bytes (512 MB)
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+VirtualHosting mode enabled.
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0:80 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:41149 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.2 (default, Mar  2 2019, 05:41:34)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x564ad245e5b0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 405552 bytes (396 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 6 seconds on interpreter 0x564ad245e5b0 pid: 10 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10)
+spawned uWSGI worker 1 (pid: 12, cores: 2)
+spawned uWSGI worker 2 (pid: 14, cores: 2)
+*** Stats server enabled on 0:9192 fd: 14 ***
+spawned uWSGI http 1 (pid: 16)
+===========================
+/
+-------------
+xb.toolob.cn [pid: 14|app: 0|req: 1/1] 10.11.0.1 () {40 vars in 682 bytes} [Tue Mar  5 00:45:05 2019] GET / => generated 5062 bytes in 2218 msecs (HTTP/1.1 200) 5 headers in 179 bytes (1 switches on core 0)
+===========================
+===========================
+/static/user-defind/user-defined.css
+===========================
+/static/5c5047cb279d2/js/rem.js
+/static/bootstrap-jq/css/fonts.googleapis.com.css
+xb.toolob.cn [pid: 14|app: 0|req: 3/2] 10.11.0.1 () {42 vars in 767 bytes} [Tue Mar  5 00:45:07 2019] GET /static/bootstrap-jq/css/fonts.googleapis.com.css => generated 0 bytes in 144 msecs (HTTP/1.1 304) 4 headers in 145 bytes (0 switches on core 1)
+xb.toolob.cn [pid: 14|app: 0|req: 3/3] 10.11.0.1 () {42 vars in 716 bytes} [Tue Mar  5 00:45:07 2019] GET /static/5c5047cb279d2/js/rem.js => generated 0 bytes in 161 msecs (HTTP/1.1 304) 4 headers in 145 bytes (0 switches on core 0)
+xb.toolob.cn [pid: 12|app: 0|req: 1/4] 10.11.0.1 () {42 vars in 741 bytes} [Tue Mar  5 00:45:07 2019] GET /static/user-defind/user-defined.css => generated 0 bytes in 718 msecs (HTTP/1.1 304) 4 headers in 145 bytes (0 switches on core 0)
+===========================
+/xb/orderType
+xb.toolob.cn [pid: 12|app: 0|req: 2/5] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 00:45:08 2019] GET /xb/orderType => generated 559 bytes in 44 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 12|app: 0|req: 3/6] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:45:08 2019] GET /xb/order?orderType=1 => generated 7248 bytes in 57 msecs (HTTP/1.1 200) 7 headers in 225 bytes (1 switches on core 0)
+===========================
+/
+-------------
+xb.toolob.cn [pid: 14|app: 0|req: 4/7] 10.11.0.1 () {40 vars in 689 bytes} [Tue Mar  5 00:46:27 2019] GET / => generated 5062 bytes in 1300 msecs (HTTP/1.1 200) 5 headers in 179 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 14|app: 0|req: 5/8] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:46:30 2019] GET /xb/order?orderType=6 => generated 1511 bytes in 37 msecs (HTTP/1.1 200) 7 headers in 225 bytes (1 switches on core 0)
+===========================
+/xb/order
+xb.toolob.cn [pid: 14|app: 0|req: 6/9] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:46:31 2019] GET /xb/order?orderType=4 => generated 6343 bytes in 35 msecs (HTTP/1.1 200) 7 headers in 225 bytes (1 switches on core 1)
+===========================
+/
+-------------
+localhost [pid: 12|app: 0|req: 4/10] 10.11.0.1 () {40 vars in 704 bytes} [Tue Mar  5 00:47:29 2019] GET / => generated 1555 bytes in 1291 msecs (HTTP/1.1 200) 5 headers in 178 bytes (1 switches on core 1)
+===========================
+/static/bootstrap-jq/css/common.css
+===========================
+/static/user-defind/user-defined.css
+localhost [pid: 12|app: 0|req: 6/11] 10.11.0.1 () {42 vars in 758 bytes} [Tue Mar  5 00:47:30 2019] GET /static/bootstrap-jq/css/common.css => generated 0 bytes in 13 msecs (HTTP/1.1 304) 4 headers in 145 bytes (0 switches on core 0)
+localhost [pid: 12|app: 0|req: 6/12] 10.11.0.1 () {42 vars in 760 bytes} [Tue Mar  5 00:47:30 2019] GET /static/user-defind/user-defined.css => generated 0 bytes in 15 msecs (HTTP/1.1 304) 4 headers in 145 bytes (0 switches on core 1)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Mar  4 16:47:45 2019] ***
+compiled with version: 6.3.0 20170516 on 04 March 2019 16:12:35
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: 2db195fa11fb
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /usr/src/app
+writing pidfile to uwsgi/run/uwsgi9001.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to .
+limiting address space of processes...
+your process address space limit is 536870912 bytes (512 MB)
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+VirtualHosting mode enabled.
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0:80 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:39159 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.2 (default, Mar  2 2019, 05:41:34)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55c5fb1f25b0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 405552 bytes (396 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x55c5fb1f25b0 pid: 11 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 11)
+spawned uWSGI worker 1 (pid: 12, cores: 2)
+spawned uWSGI worker 2 (pid: 14, cores: 2)
+*** Stats server enabled on 0:9192 fd: 14 ***
+spawned uWSGI http 1 (pid: 16)
+===========================
+/
+-------------
+xb.toolob.cn [pid: 14|app: 0|req: 1/1] 10.11.0.1 () {40 vars in 689 bytes} [Tue Mar  5 00:47:47 2019] GET / => generated 5062 bytes in 1797 msecs (HTTP/1.1 200) 5 headers in 179 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Mar  4 16:51:54 2019] ***
+compiled with version: 6.3.0 20170516 on 04 March 2019 16:51:01
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: 63f771d8f27d
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /usr/src/app
+writing pidfile to uwsgi/run/uwsgi9001.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to .
+limiting address space of processes...
+your process address space limit is 536870912 bytes (512 MB)
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+VirtualHosting mode enabled.
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0:80 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:39525 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.2 (default, Mar  2 2019, 05:41:34)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x5638fc8315b0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 405552 bytes (396 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x5638fc8315b0 pid: 11 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 11)
+spawned uWSGI worker 1 (pid: 13, cores: 2)
+spawned uWSGI worker 2 (pid: 15, cores: 2)
+*** Stats server enabled on 0:9192 fd: 14 ***
+spawned uWSGI http 1 (pid: 17)
+===========================
+/
+===========================
+/
+-------------
+-------------
+采集访问记录异常
+(1812, 'Tablespace is missing for table `mysite`.`xiaobing_ipinfo`.')
+采集访问记录异常
+(1812, 'Tablespace is missing for table `mysite`.`xiaobing_ipinfo`.')
+xb.toolob.cn [pid: 15|app: 0|req: 1/1] 10.11.0.1 () {40 vars in 688 bytes} [Tue Mar  5 00:51:56 2019] GET / => generated 5062 bytes in 1903 msecs (HTTP/1.1 200) 5 headers in 179 bytes (1 switches on core 0)
+xb.toolob.cn [pid: 13|app: 0|req: 1/2] 10.11.0.1 () {40 vars in 688 bytes} [Tue Mar  5 00:51:56 2019] GET / => generated 5062 bytes in 1992 msecs (HTTP/1.1 200) 5 headers in 179 bytes (1 switches on core 0)
+===========================
+/xb/order
+xb.toolob.cn [pid: 13|app: 0|req: 2/3] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:52:05 2019] GET /xb/order?orderType=5 => generated 27 bytes in 68 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 15|app: 0|req: 2/4] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:52:08 2019] GET /xb/order?orderType=5 => generated 27 bytes in 43 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 15|app: 0|req: 3/5] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:52:10 2019] GET /xb/order?orderType=5 => generated 27 bytes in 27 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+===========================
+/xb/order
+xb.toolob.cn [pid: 13|app: 0|req: 3/6] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:52:11 2019] GET /xb/order?orderType=3 => generated 27 bytes in 20 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+===========================
+/xb/order
+xb.toolob.cn [pid: 13|app: 0|req: 4/7] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:52:13 2019] GET /xb/order?orderType=2 => generated 27 bytes in 22 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 15|app: 0|req: 4/8] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:52:15 2019] GET /xb/order?orderType=2 => generated 27 bytes in 33 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 15|app: 0|req: 5/9] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:52:19 2019] GET /xb/order?orderType=3 => generated 27 bytes in 36 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+===========================
+/xb/order
+xb.toolob.cn [pid: 13|app: 0|req: 5/10] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:52:20 2019] GET /xb/order?orderType=5 => generated 27 bytes in 25 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+===========================
+/xb/order/304
+xb.toolob.cn [pid: 15|app: 0|req: 6/11] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 00:52:24 2019] GET /xb/order/304 => generated 27 bytes in 17 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+===========================
+/xb/order/304
+xb.toolob.cn [pid: 13|app: 0|req: 6/12] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 00:52:26 2019] GET /xb/order/304 => generated 27 bytes in 14 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 15|app: 0|req: 7/13] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:52:27 2019] GET /xb/order?orderType=5 => generated 27 bytes in 28 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+===========================
+/xb/order
+xb.toolob.cn [pid: 13|app: 0|req: 7/14] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:52:29 2019] GET /xb/order?orderType=5 => generated 27 bytes in 27 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+===========================
+/xb/order
+xb.toolob.cn [pid: 13|app: 0|req: 8/15] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:52:29 2019] GET /xb/order?orderType=5 => generated 27 bytes in 20 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 13|app: 0|req: 9/16] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:52:29 2019] GET /xb/order?orderType=5 => generated 27 bytes in 29 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+===========================
+/
+-------------
+采集访问记录异常
+(1812, 'Tablespace is missing for table `mysite`.`xiaobing_ipinfo`.')
+xb.toolob.cn [pid: 15|app: 0|req: 8/17] 10.11.0.1 () {40 vars in 689 bytes} [Tue Mar  5 00:52:32 2019] GET / => generated 5062 bytes in 1231 msecs (HTTP/1.1 200) 5 headers in 179 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 13|app: 0|req: 10/18] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:52:35 2019] GET /xb/order?orderType=3 => generated 27 bytes in 26 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 13|app: 0|req: 11/19] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 00:52:36 2019] GET /xb/order?orderType=2 => generated 27 bytes in 26 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+===========================
+/
+-------------
+===========================
+/
+-------------
+采集访问记录异常
+[Errno 12] Cannot allocate memory
+localhost [pid: 15|app: 0|req: 10/20] 10.11.0.1 () {40 vars in 704 bytes} [Tue Mar  5 00:57:51 2019] GET / => generated 1555 bytes in 1770 msecs (HTTP/1.1 200) 5 headers in 178 bytes (1 switches on core 1)
+采集访问记录异常
+(2003, "Can't connect to MySQL server on '10.11.10.1' (timed out)")
+localhost [pid: 15|app: 0|req: 10/21] 10.11.0.1 () {40 vars in 704 bytes} [Tue Mar  5 00:57:48 2019] GET / => generated 1555 bytes in 11280 msecs (HTTP/1.1 200) 5 headers in 178 bytes (1 switches on core 0)
+===========================
+/
+-------------
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Mar  4 17:00:35 2019] ***
+compiled with version: 6.3.0 20170516 on 04 March 2019 16:59:46
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: b0f441a68de1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /usr/src/app
+writing pidfile to uwsgi/run/uwsgi9001.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to .
+limiting address space of processes...
+your process address space limit is 536870912 bytes (512 MB)
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+VirtualHosting mode enabled.
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0:80 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:34115 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.2 (default, Mar  2 2019, 05:41:34)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x5606cde895b0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 405552 bytes (396 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x5606cde895b0 pid: 10 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10)
+spawned uWSGI worker 1 (pid: 12, cores: 2)
+spawned uWSGI worker 2 (pid: 14, cores: 2)
+*** Stats server enabled on 0:9192 fd: 14 ***
+spawned uWSGI http 1 (pid: 16)
+===========================
+/
+-------------
+采集访问记录异常
+(2003, "Can't connect to MySQL server on '10.11.10.1' (timed out)")
+localhost [pid: 12|app: 0|req: 1/1] 10.11.0.1 () {40 vars in 704 bytes} [Tue Mar  5 01:01:28 2019] GET / => generated 1555 bytes in 12140 msecs (HTTP/1.1 200) 5 headers in 178 bytes (1 switches on core 0)
+===========================
+/
+-------------
+===========================
+/xb/order
+xb.toolob.cn [pid: 12|app: 0|req: 2/2] 10.11.0.1 () {40 vars in 689 bytes} [Tue Mar  5 01:05:04 2019] GET / => generated 5062 bytes in 2212 msecs (HTTP/1.1 200) 5 headers in 179 bytes (1 switches on core 1)
+===========================
+/static/bootstrap-jq/css/fonts.googleapis.com.css
+===========================
+/static/5c5047cb279d2/js/rem.js
+xb.toolob.cn [pid: 12|app: 0|req: 4/4] 10.11.0.1 () {40 vars in 692 bytes} [Tue Mar  5 01:05:07 2019] GET /static/5c5047cb279d2/js/rem.js => generated 0 bytes in 43 msecs (HTTP/1.1 304) 4 headers in 145 bytes (0 switches on core 1)
+xb.toolob.cn [pid: 12|app: 0|req: 4/4] 10.11.0.1 () {40 vars in 743 bytes} [Tue Mar  5 01:05:07 2019] GET /static/bootstrap-jq/css/fonts.googleapis.com.css => generated 0 bytes in 40 msecs (HTTP/1.1 304) 4 headers in 145 bytes (0 switches on core 0)
+===========================
+/static/user-defind/user-defined.css
+xb.toolob.cn [pid: 14|app: 0|req: 2/5] 10.11.0.1 () {40 vars in 717 bytes} [Tue Mar  5 01:05:07 2019] GET /static/user-defind/user-defined.css => generated 0 bytes in 367 msecs (HTTP/1.1 304) 4 headers in 145 bytes (0 switches on core 1)
+xb.toolob.cn [pid: 14|app: 0|req: 2/6] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 01:05:06 2019] GET /xb/order?orderType=6 => generated 1511 bytes in 822 msecs (HTTP/1.1 200) 7 headers in 225 bytes (1 switches on core 0)
+===========================
+/xb/orderType
+xb.toolob.cn [pid: 14|app: 0|req: 3/7] 10.11.0.1 () {40 vars in 638 bytes} [Tue Mar  5 01:05:07 2019] GET /xb/orderType => generated 559 bytes in 22 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 12|app: 0|req: 5/8] 10.11.0.1 () {40 vars in 654 bytes} [Tue Mar  5 01:05:07 2019] GET /xb/order?orderType=1 => generated 7248 bytes in 26 msecs (HTTP/1.1 200) 7 headers in 225 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 12|app: 0|req: 6/9] 10.11.0.1 () {40 vars in 654 bytes} [Tue Mar  5 01:05:08 2019] GET /xb/order?orderType=6 => generated 1511 bytes in 38 msecs (HTTP/1.1 200) 7 headers in 225 bytes (1 switches on core 0)
+===========================
+/xb/order
+xb.toolob.cn [pid: 14|app: 0|req: 4/10] 10.11.0.1 () {40 vars in 654 bytes} [Tue Mar  5 01:05:10 2019] GET /xb/order?orderType=4 => generated 6343 bytes in 31 msecs (HTTP/1.1 200) 7 headers in 225 bytes (1 switches on core 0)
+===========================
+/xb/order
+xb.toolob.cn [pid: 14|app: 0|req: 5/11] 10.11.0.1 () {40 vars in 654 bytes} [Tue Mar  5 01:05:11 2019] GET /xb/order?orderType=5 => generated 18078 bytes in 28 msecs (HTTP/1.1 200) 7 headers in 226 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 12|app: 0|req: 7/12] 10.11.0.1 () {40 vars in 654 bytes} [Tue Mar  5 01:05:12 2019] GET /xb/order?orderType=3 => generated 2577 bytes in 36 msecs (HTTP/1.1 200) 7 headers in 225 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 14|app: 0|req: 6/13] 10.11.0.1 () {40 vars in 654 bytes} [Tue Mar  5 01:05:13 2019] GET /xb/order?orderType=2 => generated 7397 bytes in 41 msecs (HTTP/1.1 200) 7 headers in 225 bytes (1 switches on core 0)
+===========================
+/xb/order/304
+xb.toolob.cn [pid: 14|app: 0|req: 7/14] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:06:26 2019] GET /xb/order/304 => generated 1509 bytes in 20 msecs (HTTP/1.1 200) 7 headers in 239 bytes (1 switches on core 1)
+===========================
+/xb/order/281
+xb.toolob.cn [pid: 14|app: 0|req: 8/15] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:06:32 2019] GET /xb/order/281 => generated 635 bytes in 19 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+===========================
+/xb/order/235
+xb.toolob.cn [pid: 12|app: 0|req: 8/16] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:06:33 2019] GET /xb/order/235 => generated 636 bytes in 13 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+===========================
+/xb/order/236
+xb.toolob.cn [pid: 12|app: 0|req: 9/17] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:06:33 2019] GET /xb/order/236 => generated 592 bytes in 16 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 1)
+===========================
+/xb/order/234
+xb.toolob.cn [pid: 12|app: 0|req: 10/18] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:06:34 2019] GET /xb/order/234 => generated 342 bytes in 15 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+===========================
+/xb/order/233
+xb.toolob.cn [pid: 14|app: 0|req: 9/19] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:06:35 2019] GET /xb/order/233 => generated 310 bytes in 16 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 1)
+===========================
+/xb/order/237
+xb.toolob.cn [pid: 12|app: 0|req: 11/20] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:06:36 2019] GET /xb/order/237 => generated 306 bytes in 16 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 1)
+===========================
+/xb/order/238
+xb.toolob.cn [pid: 14|app: 0|req: 10/21] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:06:36 2019] GET /xb/order/238 => generated 325 bytes in 15 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+===========================
+/xb/order/241
+xb.toolob.cn [pid: 14|app: 0|req: 11/22] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:06:37 2019] GET /xb/order/241 => generated 470 bytes in 12 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 1)
+===========================
+/xb/order/240
+xb.toolob.cn [pid: 12|app: 0|req: 12/23] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:06:38 2019] GET /xb/order/240 => generated 480 bytes in 14 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+===========================
+/xb/order/239
+xb.toolob.cn [pid: 12|app: 0|req: 13/24] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:06:39 2019] GET /xb/order/239 => generated 333 bytes in 16 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 1)
+===========================
+/xb/order/242
+xb.toolob.cn [pid: 14|app: 0|req: 12/25] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:06:39 2019] GET /xb/order/242 => generated 412 bytes in 18 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+===========================
+/xb/order/283
+xb.toolob.cn [pid: 14|app: 0|req: 13/26] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:06:40 2019] GET /xb/order/283 => generated 1198 bytes in 22 msecs (HTTP/1.1 200) 7 headers in 239 bytes (1 switches on core 1)
+===========================
+/
+-------------
+xb.toolob.cn [pid: 12|app: 0|req: 14/27] 10.11.0.1 () {40 vars in 689 bytes} [Tue Mar  5 01:30:03 2019] GET / => generated 5062 bytes in 1453 msecs (HTTP/1.1 200) 5 headers in 179 bytes (1 switches on core 0)
+===========================
+/static/bootstrap-jq/css/fonts.googleapis.com.css
+===========================
+/static/5c5047cb279d2/js/rem.js
+===========================
+/static/user-defind/user-defined.css
+xb.toolob.cn [pid: 12|app: 0|req: 16/28] 10.11.0.1 () {40 vars in 743 bytes} [Tue Mar  5 01:30:05 2019] GET /static/bootstrap-jq/css/fonts.googleapis.com.css => generated 0 bytes in 44 msecs (HTTP/1.1 304) 4 headers in 145 bytes (0 switches on core 1)
+xb.toolob.cn [pid: 14|app: 0|req: 14/29] 10.11.0.1 () {40 vars in 692 bytes} [Tue Mar  5 01:30:05 2019] GET /static/5c5047cb279d2/js/rem.js => generated 0 bytes in 36 msecs (HTTP/1.1 304) 4 headers in 145 bytes (0 switches on core 0)
+xb.toolob.cn [pid: 12|app: 0|req: 16/30] 10.11.0.1 () {40 vars in 717 bytes} [Tue Mar  5 01:30:05 2019] GET /static/user-defind/user-defined.css => generated 0 bytes in 41 msecs (HTTP/1.1 304) 4 headers in 145 bytes (0 switches on core 0)
+===========================
+/xb/orderType
+xb.toolob.cn [pid: 14|app: 0|req: 15/31] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:30:05 2019] GET /xb/orderType => generated 559 bytes in 24 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 14|app: 0|req: 16/32] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 01:30:05 2019] GET /xb/order?orderType=1 => generated 7248 bytes in 29 msecs (HTTP/1.1 200) 7 headers in 225 bytes (1 switches on core 0)
+===========================
+/xb/order
+xb.toolob.cn [pid: 12|app: 0|req: 17/33] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 01:30:07 2019] GET /xb/order?orderType=6 => generated 1511 bytes in 33 msecs (HTTP/1.1 200) 7 headers in 225 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 12|app: 0|req: 18/34] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 01:30:08 2019] GET /xb/order?orderType=4 => generated 6343 bytes in 37 msecs (HTTP/1.1 200) 7 headers in 225 bytes (1 switches on core 0)
+===========================
+/xb/order
+xb.toolob.cn [pid: 14|app: 0|req: 17/35] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 01:30:09 2019] GET /xb/order?orderType=5 => generated 18078 bytes in 29 msecs (HTTP/1.1 200) 7 headers in 226 bytes (1 switches on core 1)
+===========================
+/xb/order/273
+xb.toolob.cn [pid: 14|app: 0|req: 18/36] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:30:12 2019] GET /xb/order/273 => generated 194 bytes in 21 msecs (HTTP/1.1 200) 7 headers in 238 bytes (1 switches on core 0)
+===========================
+/xb/order/275
+xb.toolob.cn [pid: 12|app: 0|req: 19/37] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:30:13 2019] GET /xb/order/275 => generated 6811 bytes in 17 msecs (HTTP/1.1 200) 7 headers in 239 bytes (1 switches on core 1)
+===========================
+/xb/order/274
+xb.toolob.cn [pid: 12|app: 0|req: 20/38] 10.11.0.1 () {40 vars in 640 bytes} [Tue Mar  5 01:30:14 2019] GET /xb/order/274 => generated 1240 bytes in 17 msecs (HTTP/1.1 200) 7 headers in 239 bytes (1 switches on core 0)
+===========================
+/xb/order
+xb.toolob.cn [pid: 12|app: 0|req: 21/39] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 01:30:15 2019] GET /xb/order?orderType=3 => generated 2577 bytes in 35 msecs (HTTP/1.1 200) 7 headers in 225 bytes (1 switches on core 1)
+===========================
+/xb/order
+xb.toolob.cn [pid: 14|app: 0|req: 19/40] 10.11.0.1 () {40 vars in 655 bytes} [Tue Mar  5 01:30:17 2019] GET /xb/order?orderType=2 => generated 7397 bytes in 48 msecs (HTTP/1.1 200) 7 headers in 225 bytes (1 switches on core 1)
+===========================
+/
+-------------
+xb.toolob.cn [pid: 12|app: 0|req: 22/41] 10.11.0.1 () {40 vars in 689 bytes} [Tue Mar  5 01:33:34 2019] GET / => generated 5062 bytes in 1643 msecs (HTTP/1.1 200) 5 headers in 179 bytes (1 switches on core 0)
+===========================
+/
+-------------
+localhost [pid: 12|app: 0|req: 23/42] 10.11.0.1 () {40 vars in 704 bytes} [Tue Mar  5 01:34:19 2019] GET / => generated 1555 bytes in 1439 msecs (HTTP/1.1 200) 5 headers in 178 bytes (1 switches on core 1)
+===========================
+/static/bootstrap-jq/css/common.css
+===========================
+/static/user-defind/user-defined.css
+localhost [pid: 12|app: 0|req: 24/43] 10.11.0.1 () {42 vars in 760 bytes} [Tue Mar  5 01:34:20 2019] GET /static/user-defind/user-defined.css => generated 0 bytes in 20 msecs (HTTP/1.1 304) 4 headers in 145 bytes (0 switches on core 0)
+localhost [pid: 14|app: 0|req: 20/44] 10.11.0.1 () {42 vars in 758 bytes} [Tue Mar  5 01:34:20 2019] GET /static/bootstrap-jq/css/common.css => generated 0 bytes in 72 msecs (HTTP/1.1 304) 4 headers in 145 bytes (0 switches on core 0)

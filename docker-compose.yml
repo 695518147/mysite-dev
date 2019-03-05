@@ -30,6 +30,7 @@ services:
     volumes:
       - ./mysql/my.cnf:/etc/my.cnf
       - ./mysql/init:/docker-entrypoint-initdb.d/
+      - ./mysql/data/:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=rootroot
     networks:
