@@ -16,8 +16,10 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/extra_apps" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.7 (mysite4)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (mysite-dev)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="R User Library" level="project" />
+    <orderEntry type="library" name="R Skeletons" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />

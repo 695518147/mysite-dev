@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f54b7e-56eb-42b1-8088-478b7c6ba92c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/dist/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mysite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mysite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uwsgi/uwsgi9001.log" beforeDir="false" afterPath="$PROJECT_DIR$/uwsgi/uwsgi9001.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,53 +45,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state relative-caret-position="210">
+              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dockerfile">
+        <entry file="file://$PROJECT_DIR$/nginx/log/access.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nginx/log/error.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nginx/nginx.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="317">
+              <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/geoip2/database.py">
+        <entry file="file://$PROJECT_DIR$/nginx/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="94" column="32" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="32" />
+            <state relative-caret-position="105">
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/hosts.py">
+        <entry file="file://$PROJECT_DIR$/start-uwsgi.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="105" column="45" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
-              <folding>
-                <element signature="e#307#316#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -102,7 +103,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uwsgi/uwsgi.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
+            <state relative-caret-position="330">
               <caret line="22" column="31" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="31" />
             </state>
           </provider>
@@ -116,7 +117,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xiaobing/SimpleMiddleware.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="150">
               <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -130,8 +131,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -202,10 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/start.sh" />
-        <option value="$PROJECT_DIR$/xiaobing/urls.py" />
-        <option value="$PROJECT_DIR$/wap/urls.py" />
-        <option value="$PROJECT_DIR$/docs/django-hosts.md" />
         <option value="$PROJECT_DIR$/mysite/hosts.py" />
         <option value="$PROJECT_DIR$/extra_apps/xadmin/apps.py" />
         <option value="$PROJECT_DIR$/extra_apps/xadmin/adminx.py" />
@@ -252,11 +249,15 @@
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/uwsgi/uwsgi.ini" />
+        <option value="$PROJECT_DIR$/nginx/www/index.html" />
+        <option value="$PROJECT_DIR$/nginx/log/access.log" />
+        <option value="$PROJECT_DIR$/nginx/log/error.log" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/nginx/nginx.conf" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -272,41 +273,25 @@
         <subPane>
           <expand>
             <path>
-              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mysite-dev" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mysite-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="nginx" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mysite-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="nginx" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql" type="462c0819:PsiDirectoryNode" />
-              <item name="init" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="uwsgi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="uwsgi" type="462c0819:PsiDirectoryNode" />
-              <item name="run" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mysite-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="nginx" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -317,13 +302,14 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/extra_apps/xadmin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nginx/html" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -333,11 +319,11 @@
       <recent name="$PROJECT_DIR$/uwsgi" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/nginx/html" />
+      <recent name="$PROJECT_DIR$/nginx" />
       <recent name="$PROJECT_DIR$/mysql/data" />
       <recent name="$PROJECT_DIR$/mysql/data/mysite" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/xiaobing/static" />
-      <recent name="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -352,73 +338,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.mysite4">
-    <configuration name="generatePassword" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="mysite" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generatePassword.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="get" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="mysite" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/xiaobing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/xiaobing/get.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="getIPInfo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="mysite" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/xiaobing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/xiaobing/getIPInfo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="mysite4" type="Python.DjangoServer" factoryName="Django server">
       <module name="mysite" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -443,13 +363,6 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.getIPInfo" />
-        <item itemvalue="Python.get" />
-        <item itemvalue="Python.generatePassword" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -478,6 +391,9 @@
       <workItem from="1551635584242" duration="1371000" />
       <workItem from="1551677465119" duration="266000" />
       <workItem from="1551704243600" duration="9940000" />
+      <workItem from="1558012808723" duration="1363000" />
+      <workItem from="1558014455581" duration="5009000" />
+      <workItem from="1558020748135" duration="771000" />
     </task>
     <task id="LOCAL-00001" summary="ueditor">
       <created>1548684968853</created>
@@ -735,7 +651,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224610000" />
+    <option name="totallyTimeSpent" value="231753000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -747,9 +663,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3111588" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32403433" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -762,8 +678,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.61528665" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3299363" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50143266" side_tool="true" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49856734" visible="true" weight="0.3299363" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50214595" side_tool="true" weight="0.3299363" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49785408" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3299363" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.3299363" />
       <window_info anchor="bottom" id="Messages" order="14" />
@@ -772,6 +688,8 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3295129" />
       <window_info anchor="right" id="Database" order="4" weight="0.3295129" />
+      <window_info anchor="right" id="R Graphics" order="5" />
+      <window_info anchor="right" id="R Packages" order="6" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28223497" />
@@ -862,43 +780,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/base_site_ext.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="74" column="28" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/crispy_forms/templatetags/crispy_forms_tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-282">
-          <caret line="212" column="4" selection-start-line="212" selection-start-column="4" selection-end-line="212" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/views/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="323" column="66" selection-start-line="323" selection-start-column="66" selection-end-line="323" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templatetags/xadmin_tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.3/python_stubs/-996435127/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="2865" column="8" selection-start-line="2865" selection-start-column="8" selection-end-line="2865" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -923,13 +804,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/forms/boundfield.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/forms/boundfield.py" />
     <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/views/edit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -947,19 +822,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/logging/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file:///usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/logging/__init__.py" />
     <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/reversion/__init__.py" />
-    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/reversion/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-149">
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/reversion/models.py" />
     <entry file="file://$PROJECT_DIR$/xiaobing/1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -978,13 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plist.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xiaobing/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
@@ -993,39 +851,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/uwsgi/uwsgi/uwsgi9001.log" />
-    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/template/context.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="245" selection-start-line="245" selection-end-line="245" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/contrib/messages/context_processors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/template/context.py" />
+    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/contrib/messages/context_processors.py" />
     <entry file="file://$PROJECT_DIR$/mysite/context/xiaobing.py" />
     <entry file="file://$PROJECT_DIR$/xiaobing/context_processors.py" />
-    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/middleware/csrf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="202" column="24" selection-start-line="202" selection-start-column="20" selection-end-line="202" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="757" column="8" selection-start-line="757" selection-start-column="8" selection-end-line="757" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/middleware/csrf.py" />
+    <entry file="file:///usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py" />
     <entry file="file://$PROJECT_DIR$/mysite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -1036,13 +867,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/utils/deprecation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/utils/deprecation.py" />
     <entry file="file://$PROJECT_DIR$/xiaobing/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -1050,13 +875,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/shortcuts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="30" column="42" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/shortcuts.py" />
     <entry file="file://$PROJECT_DIR$/xiaobing/static/user-defind/user-defined.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -1064,16 +883,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/views/decorators/cache.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="37" column="15" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/views/decorators/cache.py" />
     <entry file="file://$PROJECT_DIR$/xiaobing/templates/tj.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1081,13 +891,6 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/start-uwsgi.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -1125,10 +928,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/conf/__init__.py">
+    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/django/conf/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/mysql/my.cnf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/geoip2/database.py" />
+    <entry file="file://$PROJECT_DIR$/mysql/data/mysite/db.opt" />
+    <entry file="file://$PROJECT_DIR$/mysite/hosts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="60">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="105" column="45" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
+          <folding>
+            <element signature="e#307#316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1139,13 +968,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiaobing/SimpleMiddleware.py">
+    <entry file="file://$PROJECT_DIR$/plist.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-uwsgi.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -1156,60 +999,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="105" column="45" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
-          <folding>
-            <element signature="e#307#316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/my.cnf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/uwsgi/uwsgi.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
+        <state relative-caret-position="330">
           <caret line="22" column="31" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/uwsgi/uwsgi9001.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider" />
+      <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/mysite4/lib/python3.7/site-packages/geoip2/database.py">
+    <entry file="file://$PROJECT_DIR$/xiaobing/SimpleMiddleware.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="94" column="32" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/hosts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+        <state relative-caret-position="150">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/nginx/log/access.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+      <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/data/mysite/db.opt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/nginx/log/error.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        <state relative-caret-position="210">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
         </state>
       </provider>
     </entry>

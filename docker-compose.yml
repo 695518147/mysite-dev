@@ -1,46 +1,60 @@
 version: "3"
 
 services:
-  mysite:
-    build: .
-    container_name: xiaobing
+  nginx:
+    container_name: nginx-mysite1
+    image: nginx:latest
     restart: always
     ports:
-      - 80:80
-    depends_on:
-      - mysql
-    networks:
-      - mysite_net
+      - 8080:8080
+    #   - 443:443
     volumes:
-      - .:/usr/src/app
-    command:
-      - /bin/sh
-      - -c
-      - |
-        python manage.py makemigrations
-        python manage.py migrate
-        uwsgi --ini uwsgi/uwsgi.ini
-        tail -f /dev/null
+      - ./nginx/log:/var/log/nginx
+      - ./nginx/dist:/usr/share/nginx/html
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    command: /bin/bash -c "nginx -g 'daemon off;'"
 
-  mysql:
-    image: mysql
-    restart: always
-    ports:
-      - "3306:3306"
-    volumes:
-      - ./mysql/my.cnf:/etc/my.cnf
-      - ./mysql/init:/docker-entrypoint-initdb.d/
-      - ./mysql/data/:/var/lib/mysql
-    environment:
-      - MYSQL_ROOT_PASSWORD=rootroot
-    networks:
-      mysite_net:
-        ipv4_address: 10.11.10.1
-    container_name: "mysql"
 
-networks:
-  mysite_net:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 10.11.0.0/16
+#  mysite:
+#    build: .
+#    container_name: xiaobing
+#    restart: always
+#    ports:
+#      - 80:80
+#    depends_on:
+#      - mysql
+#    networks:
+#      - mysite_net
+#    volumes:
+#      - .:/usr/src/app
+#    command:
+#      - /bin/sh
+#      - -c
+#      - |
+#        python manage.py makemigrations
+#        python manage.py migrate
+#        uwsgi --ini uwsgi/uwsgi.ini
+#        tail -f /dev/null
+#
+#  mysql:
+#    image: mysql
+#    restart: always
+#    ports:
+#      - "3306:3306"
+#    volumes:
+#      - ./mysql/my.cnf:/etc/my.cnf
+#      - ./mysql/init:/docker-entrypoint-initdb.d/
+#      - ./mysql/data/:/var/lib/mysql
+#    environment:
+#      - MYSQL_ROOT_PASSWORD=rootroot
+#    networks:
+#      mysite_net:
+#        ipv4_address: 10.11.10.1
+#    container_name: "mysql"
+
+#networks:
+#  mysite_net1:
+#    driver: bridge
+#    ipam:
+#      config:
+#        - subnet: 10.11.0.0/16
